@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ApexTech Solutions | Enterprise Software Engineering & Quality Assurance</title>
+  <meta name="description"
+    content="Enterprise Technology Studio & Software Engineering Partner – Building resilient digital architectures, high-performance web systems, and automated quality assurance solutions." />
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+
+  <!-- Fonts: Outfit for Display, Inter for Body, JetBrains Mono for Metadata -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css?v=2" />
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- Living Technical Background -->
+  <div class="ambient-bg">
+    <div class="ambient-orb orb-primary"></div>
+    <div class="ambient-orb orb-secondary"></div>
+    <div class="ambient-orb orb-tertiary"></div>
+    <div class="glass-overlay"></div>
+    <div class="noise-overlay"></div>
+  </div>
+
+  <!-- Glass Navigation -->
+  <nav class="glass-nav" id="nav">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-prefix">//</span>
+        <span class="logo-text">ApexTech</span><span class="logo-dot">.</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#vision" class="nav-link">Vision</a></li>
+        <li><a href="#mission" class="nav-link">Mission</a></li>
+        <li><a href="#what-i-build" class="nav-link">Solutions</a></li>
+        <li><a href="#skills" class="nav-link">Capabilities</a></li>
+        <li><a href="#projects" class="nav-link">Featured Work</a></li>
+        <li><a href="#activities" class="nav-link">Our Culture</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" aria-expanded="false">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </button>
+    </div>
+  </nav>
+
+  <!-- 1. HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Left Asymmetric Content -->
+        <div class="hero-content">
+          <div class="hero-badge reveal-up">
+            <span class="pulse-dot"></span>
+            <span class="badge-text">Enterprise Software Studio · Systems Engineering · QA Automation</span>
+          </div>
+
+          <h1 class="hero-title reveal-up" style="transition-delay: 0.1s;">
+            <span class="title-line">We Engineer Software</span>
+            <span class="title-line text-gradient">With Purpose<span class="logo-dot">.</span></span>
+          </h1>
+
+          <div class="hero-roles reveal-up" style="transition-delay: 0.15s;">
+            <span class="role-static">Delivering</span>
+            <span class="role-dynamic" id="roleDynamic">Enterprise Software Systems</span>
+            <span class="type-cursor"></span>
+          </div>
+
+          <p class="hero-desc reveal-up" style="transition-delay: 0.2s;">
+            From enterprise architecture and full-stack software development to automated quality engineering and user-centric design, we build software solutions that are reliable, scalable, and engineered to drive measurable business results.
+          </p>
+
+          <div class="hero-actions reveal-up" style="transition-delay: 0.25s;">
+            <div class="action-buttons-group">
+              <a href="#projects" class="btn btn-primary magnetic-btn">
+                <span>Explore Featured Work</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="#skills" class="btn btn-secondary magnetic-btn">
+                <span>Core Capabilities</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="social-pills">
+              <a href="https://github.com" target="_blank" class="social-pill" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
+                <span>GitHub Org</span>
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="social-pill"
+                aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Asymmetric Interactive Network Container -->
+        <div class="hero-visual-card glass-card tilt-card reveal-up" style="transition-delay: 0.3s;">
+          <canvas id="heroNetworkCanvas" class="hero-canvas"></canvas>
+          <div class="telemetry-header" style="position: relative; z-index: 5;">
+            <div class="telemetry-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="telemetry-title">ENTERPRISE_SYSTEM // CORE ENGINE</span>
+          </div>
+
+          <div class="visual-card-content" style="position: relative; z-index: 5;">
+            <div class="telemetry-grid">
+              <div class="telemetry-item">
+                <span class="telemetry-label">Architecture Ecosystem</span>
+                <div class="tech-matrix">
+                  <span class="tech-chip">CODE</span>
+                  <span class="tech-chip">DATA</span>
+                  <span class="tech-chip">SYSTEMS</span>
+                  <span class="tech-chip">QUALITY</span>
+                  <span class="tech-chip">ENGINEERING</span>
+                </div>
+              </div>
+
+              <div class="telemetry-item">
+                <span class="telemetry-label">Cluster Status</span>
+                <div class="telemetry-value">
+                  <span style="color: var(--cyan); font-weight: 600;">ACTIVE NODE FLOW</span>
+                  <span style="color: var(--text-subtle);">•</span>
+                  <span>LATENCY 0.2ms</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <span class="scroll-text">Explore Solutions</span>
+    </div>
+  </section>
+
+  <!-- 2. VISION SECTION -->
+  <section class="section vision-section" id="vision">
+    <div class="hero-to-vision-connector"></div>
+    <div class="container">
+      <div class="section-header-wrap reveal-up">
+        <span class="section-num">01 // VISION</span>
+        <h2 class="section-title">Where Are We Heading?<span class="logo-dot">.</span></h2>
+      </div>
+
+      <!-- Large Editorial Statement -->
+      <div class="vision-editorial-wrap reveal-up">
+        <p class="vision-editorial-statement">
+          To be an elite software engineering and quality assurance studio bridging the gap between
+          <span class="vision-word word-idea">ambitious ideas</span>,
+          <span class="vision-word word-engineering">robust engineering</span>, and
+          <span class="vision-word word-impact">measurable enterprise impact</span> —
+          building digital systems that are not only functional, but resilient, scalable, and engineered to evolve.
+        </p>
+      </div>
+
+      <!-- Sequential Animated Path Nodes -->
+      <div class="vision-path-container reveal-up" style="transition-delay: 0.15s;">
+        <div class="vision-path-line">
+          <div class="vision-path-progress" id="visionPathProgress"></div>
+        </div>
+
+        <div class="vision-path-grid">
+          <!-- Step 1: IDEA -->
+          <div class="vision-path-step step-idea" data-step="1">
+            <span class="path-step-badge">STEP 01</span>
+            <div class="path-node-wrap">
+              <div class="path-node">
+                <span class="node-inner"></span>
+              </div>
+            </div>
+            <div class="path-content">
+              <span class="path-title">DISCOVERY</span>
+              <span class="path-desc">Architecture & Blueprinting</span>
+            </div>
+          </div>
+
+          <!-- Step 2: ENGINEERING -->
+          <div class="vision-path-step step-engineering" data-step="2">
+            <span class="path-step-badge">STEP 02</span>
+            <div class="path-node-wrap">
+              <div class="path-node">
+                <span class="node-inner"></span>
+              </div>
+            </div>
+            <div class="path-content">
+              <span class="path-title">ENGINEERING</span>
+              <span class="path-desc">Clean Code & Resilient Systems</span>
+            </div>
+          </div>
+
+          <!-- Step 3: QUALITY -->
+          <div class="vision-path-step step-quality" data-step="3">
+            <span class="path-step-badge">STEP 03</span>
+            <div class="path-node-wrap">
+              <div class="path-node">
+                <span class="node-inner"></span>
+              </div>
+            </div>
+            <div class="path-content">
+              <span class="path-title">ASSURANCE</span>
+              <span class="path-desc">Automated QA & Zero-Defects</span>
+            </div>
+          </div>
+
+          <!-- Step 4: IMPACT -->
+          <div class="vision-path-step step-impact" data-step="4">
+            <span class="path-step-badge">STEP 04</span>
+            <div class="path-node-wrap">
+              <div class="path-node">
+                <span class="node-inner"></span>
+              </div>
+            </div>
+            <div class="path-content">
+              <span class="path-title">SCALE & IMPACT</span>
+              <span class="path-desc">High-Availability Cloud Delivery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. MISSION SECTION -->
+  <section class="section mission-section" id="mission">
+    <div class="container">
+      <div class="section-header-wrap reveal-up">
+        <span class="section-num">02 // MISSION</span>
+        <h2 class="section-title">What Drives Our Studio?<span class="logo-dot">.</span></h2>
+        <p class="mission-statement-lead">
+          Our mission is to partner with forward-thinking enterprises, engineering digital solutions across software engineering, quality assurance, and high-performance system design — turning complex technical challenges into dependable market advantages.
+        </p>
+      </div>
+
+      <!-- 3-Stage Connected System Layout -->
+      <div class="mission-system-grid reveal-up" style="transition-delay: 0.15s;">
+        <!-- Left: Connected Interactive Stages Navigator -->
+        <div class="mission-stages-nav">
+          <!-- Stage 1: BUILD -->
+          <div class="mission-stage-card stage-build active" data-stage="build">
+            <div class="stage-header">
+              <div class="stage-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <div class="stage-tag">STAGE 01</div>
+            </div>
+            <h3 class="stage-title">BUILD</h3>
+            <p class="stage-desc">Turn enterprise concepts into scalable, clean codebases.</p>
+            <div class="stage-connector"></div>
+          </div>
+
+          <!-- Stage 2: VALIDATE -->
+          <div class="mission-stage-card stage-validate" data-stage="validate">
+            <div class="stage-header">
+              <div class="stage-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <div class="stage-tag">STAGE 02</div>
+            </div>
+            <h3 class="stage-title">VALIDATE</h3>
+            <p class="stage-desc">Verify systems through rigorous test automation and security gates.</p>
+            <div class="stage-connector"></div>
+          </div>
+
+          <!-- Stage 3: EVOLVE -->
+          <div class="mission-stage-card stage-evolve" data-stage="evolve">
+            <div class="stage-header">
+              <div class="stage-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                </svg>
+              </div>
+              <div class="stage-tag">STAGE 03</div>
+            </div>
+            <h3 class="stage-title">EVOLVE</h3>
+            <p class="stage-desc">Continuous deployment, cloud elasticity, and system longevity.</p>
+          </div>
+        </div>
+
+        <!-- Right: Dynamic Interactive Visual Viewport -->
+        <div class="mission-visual-viewport glass-card">
+          <!-- Visual 1: BUILD (Code / Architecture) -->
+          <div class="visual-panel panel-build active" id="panelBuild">
+            <div class="panel-header">
+              <span class="mono-meta">// STAGE 01: BUILD VISUALIZATION</span>
+              <span class="status-chip chip-cyan">ENTERPRISE ARCHITECTURE</span>
+            </div>
+            <div class="code-editor-mock">
+              <div class="editor-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="editor-title">EnterprisePlatform.java</span>
+              </div>
+              <pre class="code-body"><code><span class="code-keyword">public class</span> <span class="code-class">EnterprisePlatform</span> {
+  <span class="code-keyword">private</span> HighAvailabilityCluster cluster;
+  <span class="code-keyword">private</span> AutomatedQaPipeline qaPipeline;
+
+  <span class="code-keyword">public void</span> <span class="code-func">deployScalableService</span>() {
+    <span class="code-comment">// Transforming enterprise vision into high-uptime system</span>
+    cluster = <span class="code-keyword">new</span> HighAvailabilityCluster();
+    cluster.initializeDistributedNodes();
+    qaPipeline.assertZeroEscapedDefects();
+  }
+}</code></pre>
+            </div>
+            <div class="panel-footer-chips">
+              <span class="tech-chip">Java Enterprise</span>
+              <span class="tech-chip">Distributed Logic</span>
+              <span class="tech-chip">High Concurrency</span>
+            </div>
+          </div>
+
+          <!-- Visual 2: VALIDATE (Testing / Verification) -->
+          <div class="visual-panel panel-validate" id="panelValidate">
+            <div class="panel-header">
+              <span class="mono-meta">// STAGE 02: VALIDATE VISUALIZATION</span>
+              <span class="status-chip chip-violet">VERIFICATION & QA</span>
+            </div>
+            <div class="qa-dashboard-mock">
+              <div class="qa-metric-row">
+                <div class="qa-metric">
+                  <span class="qa-val text-accent">100%</span>
+                  <span class="qa-lbl">Test Suite Execution</span>
+                </div>
+                <div class="qa-metric">
+                  <span class="qa-val" style="color: var(--cyan);">0</span>
+                  <span class="qa-lbl">Critical Escaped Defects</span>
+                </div>
+              </div>
+              <div class="qa-suite-list">
+                <div class="suite-item">
+                  <span class="suite-status">PASS</span>
+                  <span class="suite-name">BoundaryValueAnalysis (2VA/3VA)</span>
+                </div>
+                <div class="suite-item">
+                  <span class="suite-status">PASS</span>
+                  <span class="suite-name">EndToEndRegressionAutomation</span>
+                </div>
+                <div class="suite-item">
+                  <span class="suite-status">PASS</span>
+                  <span class="suite-name">SecurityVulnerabilityAudit</span>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer-chips">
+              <span class="tech-chip">ISTQB Testing Protocols</span>
+              <span class="tech-chip">Continuous CI/CD Gate</span>
+              <span class="tech-chip">Automated Regressions</span>
+            </div>
+          </div>
+
+          <!-- Visual 3: EVOLVE (Growth / System Evolution) -->
+          <div class="visual-panel panel-evolve" id="panelEvolve">
+            <div class="panel-header">
+              <span class="mono-meta">// STAGE 03: EVOLVE VISUALIZATION</span>
+              <span class="status-chip chip-magenta">CONTINUOUS CLOUD OPERATIONS</span>
+            </div>
+            <div class="evolution-mock">
+              <div class="evolution-nodes-grid">
+                <div class="evo-card">
+                  <span class="evo-year">CLOUD INFRASTRUCTURE</span>
+                  <span class="evo-title">99.99% Availability</span>
+                  <span class="evo-sub">Multi-Region Redundancy & Elasticity</span>
+                </div>
+                <div class="evo-card active-card">
+                  <span class="evo-year">PRODUCTION PIPELINE</span>
+                  <span class="evo-title">Zero-Downtime Deploy</span>
+                  <span class="evo-sub">Automated Health Telemetry & Rollbacks</span>
+                </div>
+                <div class="evo-card">
+                  <span class="evo-year">NEXT HORIZON</span>
+                  <span class="evo-title">AI Automation Workflows</span>
+                  <span class="evo-sub">Intelligent Observability & Analytics</span>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer-chips">
+              <span class="tech-chip">High Availability</span>
+              <span class="tech-chip">Continuous Delivery</span>
+              <span class="tech-chip">Enterprise SLA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SOLUTIONS & SERVICES SECTION -->
+  <section class="section build-section" id="what-i-build">
+    <div class="container">
+      <div class="section-header-wrap reveal-up">
+        <span class="section-num">03 // WHAT WE ENGINEER</span>
+        <h2 class="section-title">Core Solutions & Services<span class="logo-dot">.</span></h2>
+        <p class="section-sub">Four specialized engineering modules spanning enterprise software architecture, automated quality verification, product strategy, and complex problem solving.</p>
+      </div>
+
+      <div class="capabilities-modules-grid">
+        <!-- Module 1: SOFTWARE ENGINEERING -->
+        <div class="glass-card capability-module-card tilt-card reveal-up" data-module="software">
+          <div>
+            <div class="module-header">
+              <span class="mono-meta">01 // ARCHITECTURE</span>
+              <div class="module-icon icon-cyan">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="module-title">SOFTWARE ENGINEERING</h3>
+            <p class="module-desc">Building resilient enterprise web applications, microservices, and maintainable systems with clean architecture.</p>
+          </div>
+
+          <!-- Internal Visual: Architecture Diagram -->
+          <div class="module-internal-visual">
+            <div class="diagram-title">// SYSTEM ARCHITECTURE FLOW</div>
+            <div class="arch-nodes-flow">
+              <div class="arch-node">UI Layer</div>
+              <div class="arch-arrow">→</div>
+              <div class="arch-node active-node">API Gateway</div>
+              <div class="arch-arrow">→</div>
+              <div class="arch-node">Core Services</div>
+              <div class="arch-arrow">→</div>
+              <div class="arch-node">Database</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 2: QUALITY ENGINEERING -->
+        <div class="glass-card capability-module-card tilt-card reveal-up" style="transition-delay: 0.1s;"
+          data-module="quality">
+          <div>
+            <div class="module-header">
+              <span class="mono-meta">02 // VERIFICATION</span>
+              <div class="module-icon icon-violet">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="module-title">QUALITY ENGINEERING</h3>
+            <p class="module-desc">Rigorous test automation, regression pipelines, and systematic QA to guarantee zero-defect releases.</p>
+          </div>
+
+          <!-- Internal Visual: Testing Check Flow -->
+          <div class="module-internal-visual">
+            <div class="diagram-title">// VERIFICATION & TEST CHECK FLOW</div>
+            <div class="check-flow-grid">
+              <div class="check-step"><span class="check-icon">✓</span> Test Strategy Design</div>
+              <div class="check-step"><span class="check-icon">✓</span> Boundary Partition</div>
+              <div class="check-step"><span class="check-icon">✓</span> Defect Isolation</div>
+              <div class="check-step highlight-step"><span class="check-icon">✓</span> Zero Defect Release</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 3: PRODUCT THINKING -->
+        <div class="glass-card capability-module-card tilt-card reveal-up" style="transition-delay: 0.15s;"
+          data-module="product">
+          <div>
+            <div class="module-header">
+              <span class="mono-meta">03 // STRATEGY</span>
+              <div class="module-icon icon-magenta">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="12" y1="8" x2="12" y2="12" />
+                  <line x1="12" y1="16" x2="12.01" y2="16" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="module-title">PRODUCT STRATEGY</h3>
+            <p class="module-desc">Understanding client business drivers and user journeys to build software that scales market impact.</p>
+          </div>
+
+          <!-- Internal Visual: Idea -> User -> Product -->
+          <div class="module-internal-visual">
+            <div class="diagram-title">// VALUE CREATION PIPELINE</div>
+            <div class="product-pipeline-flow">
+              <div class="pipe-step"><span class="pipe-tag">01</span> VISION</div>
+              <div class="pipe-arrow">→</div>
+              <div class="pipe-step"><span class="pipe-tag">02</span> MARKET</div>
+              <div class="pipe-arrow">→</div>
+              <div class="pipe-step active-pipe"><span class="pipe-tag">03</span> PLATFORM</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 4: PROBLEM SOLVING -->
+        <div class="glass-card capability-module-card tilt-card reveal-up" style="transition-delay: 0.2s;"
+          data-module="solving">
+          <div>
+            <div class="module-header">
+              <span class="mono-meta">04 // METHODOLOGY</span>
+              <div class="module-icon icon-cyan">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="module-title">SYSTEM PROBLEM SOLVING</h3>
+            <p class="module-desc">Deconstructing complex enterprise bottlenecks into elegant, performant engineering solutions.</p>
+          </div>
+
+          <!-- Internal Visual: Problem -> Analysis -> Solution -->
+          <div class="module-internal-visual">
+            <div class="diagram-title">// DECONSTRUCTION METHODOLOGY</div>
+            <div class="solving-flow-grid">
+              <div class="solve-node">CHALLENGE</div>
+              <div class="solve-line"></div>
+              <div class="solve-node active-solve">ANALYSIS</div>
+              <div class="solve-line"></div>
+              <div class="solve-node">SOLUTION</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. TECHNICAL CAPABILITIES SECTION -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header-wrap reveal-up">
+        <span class="section-num">04 // TECHNICAL CAPABILITIES</span>
+        <h2 class="section-title">Engineering Capability Map<span class="logo-dot">.</span></h2>
+        <p class="section-sub">A structured topology of our core engineering competencies, QA automation protocols, data systems, and emerging technologies.</p>
+      </div>
+
+      <!-- Central Node Topology Header Visual -->
+      <div class="capability-topology-visual glass-card reveal-up">
+        <div class="topology-core-node">
+          <span class="core-pulse"></span>
+          <span class="core-text">APEX CORE</span>
+        </div>
+        <div class="topology-links">
+          <div class="top-link-node" data-target="software">
+            <span class="link-dot"></span>
+            <span class="link-label">ENGINEERING</span>
+          </div>
+          <div class="top-link-node" data-target="quality">
+            <span class="link-dot"></span>
+            <span class="link-label">QA AUTOMATION</span>
+          </div>
+          <div class="top-link-node" data-target="data">
+            <span class="link-dot"></span>
+            <span class="link-label">DATA & CLOUD</span>
+          </div>
+          <div class="top-link-node" data-target="exploring">
+            <span class="link-dot"></span>
+            <span class="link-label">AI & NEXT-GEN</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Capability Groups Grid -->
+      <div class="capability-map-grid reveal-up" style="transition-delay: 0.15s;">
+        <!-- Group 1: SOFTWARE ENGINEERING -->
+        <div class="glass-card capability-map-card tilt-card" data-group="software">
+          <div>
+            <div class="cap-card-header">
+              <span class="mono-meta">01 // CORE</span>
+              <span class="status-chip chip-cyan">FOUNDATION</span>
+            </div>
+            <h3 class="cap-card-title">SOFTWARE ENGINEERING</h3>
+            <p class="cap-card-desc">Architecting robust systems and scalable APIs with maintainable, test-driven code.</p>
+          </div>
+          <div class="cap-pills-list">
+            <span class="cap-pill">Java Enterprise</span>
+            <span class="cap-pill">Modern JavaScript / TS</span>
+            <span class="cap-pill">OOP & Design Patterns</span>
+            <span class="cap-pill">Algorithms & Data Structures</span>
+            <span class="cap-pill">Microservices</span>
+          </div>
+        </div>
+
+        <!-- Group 2: QUALITY ENGINEERING -->
+        <div class="glass-card capability-map-card tilt-card" data-group="quality" style="transition-delay: 0.1s;">
+          <div>
+            <div class="cap-card-header">
+              <span class="mono-meta">02 // VERIFICATION</span>
+              <span class="status-chip chip-violet">SPECIALIZATION</span>
+            </div>
+            <h3 class="cap-card-title">QUALITY ENGINEERING</h3>
+            <p class="cap-card-desc">Testing software comprehensively to guarantee resilience, compliance, and zero escaped defects.</p>
+          </div>
+          <div class="cap-pills-list">
+            <span class="cap-pill">Test Automation</span>
+            <span class="cap-pill">Test Case Design</span>
+            <span class="cap-pill">Boundary Value (2VA/3VA)</span>
+            <span class="cap-pill">Regression Automation</span>
+            <span class="cap-pill">Security & Load Testing</span>
+          </div>
+        </div>
+
+        <!-- Group 3: DATA & SYSTEMS -->
+        <div class="glass-card capability-map-card tilt-card" data-group="data" style="transition-delay: 0.15s;">
+          <div>
+            <div class="cap-card-header">
+              <span class="mono-meta">03 // PERSISTENCE</span>
+              <span class="status-chip chip-magenta">INFRASTRUCTURE</span>
+            </div>
+            <h3 class="cap-card-title">DATA & CLOUD SYSTEMS</h3>
+            <p class="cap-card-desc">Architecting relational and distributed databases, caching tiers, and clean query APIs.</p>
+          </div>
+          <div class="cap-pills-list">
+            <span class="cap-pill">SQL & Relational Schema</span>
+            <span class="cap-pill">Database Design & ERD</span>
+            <span class="cap-pill">Firebase & Realtime Sync</span>
+            <span class="cap-pill">Cloud Infrastructure</span>
+          </div>
+        </div>
+
+        <!-- Group 4: CURRENTLY EXPLORING -->
+        <div class="glass-card capability-map-card tilt-card" data-group="exploring" style="transition-delay: 0.2s;">
+          <div>
+            <div class="cap-card-header">
+              <span class="mono-meta">04 // INNOVATION</span>
+              <span class="status-chip chip-amber">NEXT-GEN</span>
+            </div>
+            <div class="cap-card-title">AI & ADVANCED TECH</div>
+            <p class="cap-card-desc">Pioneering autonomous AI agent pipelines, intelligent testing, and smart analytics.</p>
+          </div>
+          <div class="cap-pills-list">
+            <span class="cap-pill">Python & Data Science</span>
+            <span class="cap-pill">AI Agent Workflows</span>
+            <span class="cap-pill">Automated Telemetry</span>
+            <span class="cap-pill">Intelligent QA</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Standards & Accreditations Marquee Container -->
+      <div class="certs-container reveal-up" style="margin-top: 3.5rem;">
+        <div class="certs-header">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+          </svg>
+          <h3 class="certs-title">Standards & Technical Competencies</h3>
+        </div>
+        <div class="certs-marquee-wrap">
+          <div class="certs-marquee">
+            <div class="cert-pill">ISTQB Compliant Testing Methodology</div>
+            <div class="cert-pill">Enterprise Java & Architecture Standards</div>
+            <div class="cert-pill">Relational Database Optimization & ERD</div>
+            <div class="cert-pill">HCIA-AI ICT Certified Standards</div>
+            <div class="cert-pill">Continuous Integration & Test Automation</div>
+            <div class="cert-pill">Cybersecurity & Infrastructure Hygiene</div>
+            <div class="cert-pill">High-Performance Web Engineering</div>
+            <div class="cert-pill">Scalable Cloud Architecture</div>
+            <!-- Duplicate for infinite marquee loop -->
+            <div class="cert-pill">ISTQB Compliant Testing Methodology</div>
+            <div class="cert-pill">Enterprise Java & Architecture Standards</div>
+            <div class="cert-pill">Relational Database Optimization & ERD</div>
+            <div class="cert-pill">HCIA-AI ICT Certified Standards</div>
+            <div class="cert-pill">Continuous Integration & Test Automation</div>
+            <div class="cert-pill">Cybersecurity & Infrastructure Hygiene</div>
+            <div class="cert-pill">High-Performance Web Engineering</div>
+            <div class="cert-pill">Scalable Cloud Architecture</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. SELECTED WORK SECTION -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header-wrap reveal-up">
+        <span class="section-num">05 // FEATURED CLIENT WORK</span>
+        <h2 class="section-title">Proven Engineering Results<span class="logo-dot">.</span></h2>
+        <p class="section-sub">A curated showcase of production platforms, enterprise portals, and high-impact digital experiences delivered by our studio.</p>
+      </div>
+
+      <div class="projects-editorial-stack">
+        <!-- HERO LARGE FEATURED: Wivsy Brand Platform -->
+        <div class="glass-card project-editorial-card hero-showcase tilt-card reveal-up">
+          <div class="editorial-grid-hero">
+            <div class="project-media-box">
+              <span class="editorial-badge">ENTERPRISE CLIENT // 01</span>
+              <img src="Wivsy.png" alt="Wivsy Brand Platform" class="editorial-img" />
+            </div>
+            <div class="project-details-box">
+              <span class="project-category-tag">COMMERCE & IDENTITY // FULL-STACK PLATFORM</span>
+              <h3 class="editorial-title">Wivsy Brand Platform</h3>
+
+              <div class="meta-section">
+                <div class="meta-block">
+                  <span class="meta-label">THE CHALLENGE</span>
+                  <p class="meta-text">The client required a modern, highly secure digital platform to establish entity identity, manage client authentication workflows, and streamline customer access with zero latency.</p>
+                </div>
+                <div class="meta-block">
+                  <span class="meta-label">WHAT WE DELIVERED</span>
+                  <p class="meta-text">Architected and engineered a full-stack brand web application powered by PHP & SQL backend, featuring Google OAuth 2.0 single sign-on authentication, responsive UI architecture, and dynamic data management.</p>
+                </div>
+              </div>
+
+              <div class="meta-footer">
+                <div class="role-chip-wrap">
+                  <span class="role-lbl">SERVICES:</span>
+                  <span class="role-val">Full-Stack Engineering & Brand UI Architecture</span>
+                </div>
+                <div class="project-tags">
+                  <span class="project-tag">HTML5</span>
+                  <span class="project-tag">CSS3</span>
+                  <span class="project-tag">JavaScript</span>
+                  <span class="project-tag">PHP</span>
+                  <span class="project-tag">SQL</span>
+                  <span class="project-tag">Google OAuth 2.0</span>
+                </div>
+                <a href="https://wivsystore.com/" target="_blank" class="btn btn-primary magnetic-btn project-link-btn">
+                  <span>Launch Live Platform</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO LARGE FEATURED: ClassHub Student Portal -->
+        <div class="glass-card project-editorial-card hero-showcase tilt-card reveal-up"
+          style="transition-delay: 0.1s;">
+          <div class="editorial-grid-hero">
+            <div class="project-media-box">
+              <span class="editorial-badge">ENTERPRISE SYSTEM // 02</span>
+              <img src="Class.png" alt="ClassHub Student Portal" class="editorial-img" />
+            </div>
+            <div class="project-details-box">
+              <span class="project-category-tag">EDTECH SOLUTION // CORE ACADEMIC PORTAL</span>
+              <h3 class="editorial-title">ClassHub Academic Portal</h3>
+
+              <div class="meta-section">
+                <div class="meta-block">
+                  <span class="meta-label">THE CHALLENGE</span>
+                  <p class="meta-text">Academic organizations required a centralized, zero-clutter portal to distribute course materials, lecture schedules, and academic announcements without fragmented channels.</p>
+                </div>
+                <div class="meta-block">
+                  <span class="meta-label">WHAT WE DELIVERED</span>
+                  <p class="meta-text">Architected a full-featured web portal with PHP & MySQL backend, featuring structured material indexing and an intuitive dark glassmorphism student interface.</p>
+                </div>
+              </div>
+
+              <div class="meta-footer">
+                <div class="role-chip-wrap">
+                  <span class="role-lbl">SERVICES:</span>
+                  <span class="role-val">System Architecture & Database Engineering</span>
+                </div>
+                <div class="project-tags">
+                  <span class="project-tag">PHP</span>
+                  <span class="project-tag">MySQL</span>
+                  <span class="project-tag">Glassmorphism UI</span>
+                  <span class="project-tag">JavaScript</span>
+                </div>
+                <a href="https://demo.apextech.dev/classhub" target="_blank"
+                  class="btn btn-secondary magnetic-btn project-link-btn">
+                  <span>Launch Live Platform</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MEDIUM SHOWCASE: Aim Club Landing Page -->
+        <div class="glass-card project-editorial-card medium-showcase tilt-card reveal-up"
+          style="transition-delay: 0.15s;">
+          <div class="editorial-grid-medium">
+            <div class="project-media-box">
+              <div class="vibe-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                </svg>
+                <span>Interactive Experience</span>
+              </div>
+              <img src="Aim.png" alt="Aim Club Landing Page" class="editorial-img" />
+            </div>
+            <div class="project-details-box">
+              <span class="project-category-tag">COMMUNITY PLATFORM // BRAND EXPERIENCE</span>
+              <h3 class="editorial-title">Aim Digital Community Platform</h3>
+              <p class="meta-text" style="margin-bottom: 1.2rem;">
+                <strong>Challenge:</strong> Organization required a high-energy landing experience to maximize member engagement, showcase initiatives, and communicate entity identity.<br />
+                <strong>What We Delivered:</strong> Designed and deployed a dynamic web experience featuring vibrant gradients, responsive typography, and community spotlight sections.
+              </p>
+              <div class="meta-footer">
+                <div class="role-chip-wrap">
+                  <span class="role-lbl">SERVICES:</span>
+                  <span class="role-val">Frontend Engineering & UI/UX Strategy</span>
+                </div>
+                <div class="project-tags">
+                  <span class="project-tag">HTML5</span>
+                  <span class="project-tag">CSS3</span>
+                  <span class="project-tag">JavaScript</span>
+                </div>
+                <a href="https://aimclub223-cmd.github.io/Aim-Club/" target="_blank"
+                  class="btn btn-secondary magnetic-btn project-link-btn">
+                  <span>Launch Live Platform</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUPPORTING PROJECTS 2-COLUMN GRID -->
+        <div class="supporting-projects-grid">
+          <!-- Project 3: Oraby Store -->
+          <div class="glass-card project-editorial-card supporting-showcase tilt-card reveal-up"
+            style="transition-delay: 0.2s;">
+            <div class="project-media-box media-compact">
+              <img src="oraby.png" alt="Oraby Store" class="editorial-img" />
+            </div>
+            <div class="project-details-box">
+              <span class="project-category-tag">E-COMMERCE PLATFORM</span>
+              <h3 class="editorial-title-sm">Oraby Digital Store</h3>
+              <p class="meta-text-sm">
+                <strong>Challenge:</strong> Retail merchant needed instant product catalog syncing & real-time transaction processing.<br />
+                <strong>What We Delivered:</strong> High-performance e-commerce solution integrated with Firebase real-time database.
+              </p>
+              <div class="meta-footer">
+                <span class="role-val-sm">Services: E-Commerce UI & Firebase Sync</span>
+                <div class="project-tags">
+                  <span class="project-tag">HTML5</span>
+                  <span class="project-tag">CSS3</span>
+                  <span class="project-tag">Firebase</span>
+                </div>
+                <a href="https://orabyshop.gamer.gd/index.html" target="_blank" class="project-link">
+                  <span>Live Platform</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: House Decor Showcase -->
+          <div class="glass-card project-editorial-card supporting-showcase tilt-card reveal-up"
+            style="transition-delay: 0.25s;">
+            <div class="project-media-box media-compact">
+              <img src="house.png" alt="House Decor Showcase" class="editorial-img" />
+            </div>
+            <div class="project-details-box">
+              <span class="project-category-tag">COMMERCIAL SHOWCASE</span>
+              <h3 class="editorial-title-sm">House Decor Portfolio</h3>
+              <p class="meta-text-sm">
+                <strong>Challenge:</strong> Architectural interior design entity needed a luxury digital showcase for modern concepts.<br />
+                <strong>What We Delivered:</strong> Minimalist showcase website with responsive gallery layouts and high-resolution rendering.
+              </p>
+              <div class="meta-footer">
+                <span class="role-val-sm">Services: Frontend Engineering & Performance</span>
+                <div class="project-tags">
+                  <span class="project-tag">HTML5</span>
+                  <span class="project-tag">CSS3</span>
+                  <span class="project-tag">JavaScript</span>
+                </div>
+                <a href="https://mohamedsaleh.page.gd/" target="_blank" class="project-link">
+                  <span>Live Platform</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section CTA: View All Work -->
+      <div class="section-cta-wrap reveal-up" style="margin-top: 4rem; text-align: center;">
+        <a href="#skills" class="btn btn-secondary btn-lg magnetic-btn">
+          <span>Explore Technical Capabilities</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. OUR CULTURE & ENGINEERING VALUES SECTION -->
+  <section class="section activities-section" id="activities">
+    <div class="container">
+      <div class="section-header-wrap reveal-up">
+        <span class="section-num">06 // ENGINEERING PHILOSOPHY</span>
+        <h2 class="section-title">How Do We Operate?<span class="logo-dot">.</span></h2>
+        <p class="section-sub">A structured foundation of engineering discipline, client partnership, uncompromising quality standards, and technical synergy.</p>
+      </div>
+
+      <div class="beyond-timeline-container reveal-up">
+        <!-- Connecting Vertical Laser Line -->
+        <div class="timeline-v-line"></div>
+
+        <!-- Timeline Node 1: CLIENT PARTNERSHIP -->
+        <div class="timeline-milestone-item reveal-up">
+          <div class="timeline-milestone-node node-cyan">
+            <span class="node-icon">01</span>
+          </div>
+          <div class="glass-card timeline-experience-card tilt-card">
+            <div class="exp-card-header">
+              <span class="mono-meta">01 // PARTNERSHIP</span>
+              <span class="status-chip chip-cyan">TRANSPARENCY</span>
+            </div>
+            <h3 class="exp-entity-title">Client-Centric Collaboration</h3>
+            <span class="exp-role-sub">Agile Alignment & Open Sprints</span>
+            <p class="exp-desc">
+              We partner directly with founders and enterprise engineering leads. Through regular sprint demos, direct technical communication, and clear documentation, we ensure total strategic alignment from day one.
+            </p>
+            <div class="exp-pills">
+              <span class="cap-pill">Agile Delivery</span>
+              <span class="cap-pill">Direct Collaboration</span>
+              <span class="cap-pill">Clear Roadmaps</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Node 2: ZERO-DEFECT QA -->
+        <div class="timeline-milestone-item reveal-up" style="transition-delay: 0.1s;">
+          <div class="timeline-milestone-node node-violet">
+            <span class="node-icon">02</span>
+          </div>
+          <div class="glass-card timeline-experience-card tilt-card">
+            <div class="exp-card-header">
+              <span class="mono-meta">02 // VERIFICATION</span>
+              <span class="status-chip chip-violet">QUALITY ASSURANCE</span>
+            </div>
+            <h3 class="exp-entity-title">Zero-Compromise Quality</h3>
+            <span class="exp-role-sub">Rigorous Testing Mindset</span>
+            <p class="exp-desc">
+              Quality is not an afterthought in our studio. Every software delivery undergoes boundary value analysis, regression verification, and automated end-to-end testing before reaching production.
+            </p>
+            <div class="exp-pills">
+              <span class="cap-pill">Automated Regressions</span>
+              <span class="cap-pill">Boundary Analysis</span>
+              <span class="cap-pill">Reliability First</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Node 3: RESILIENT ARCHITECTURES -->
+        <div class="timeline-milestone-item reveal-up" style="transition-delay: 0.15s;">
+          <div class="timeline-milestone-node node-magenta">
+            <span class="node-icon">03</span>
+          </div>
+          <div class="glass-card timeline-experience-card tilt-card">
+            <div class="exp-card-header">
+              <span class="mono-meta">03 // ARCHITECTURE</span>
+              <span class="status-chip chip-magenta">CLEAN SYSTEMS</span>
+            </div>
+            <h3 class="exp-entity-title">Resilient & Scalable Systems</h3>
+            <span class="exp-role-sub">Modular Technical Foundations</span>
+            <p class="exp-desc">
+              We engineer systems designed for long-term maintainability. Clean separation of concerns, modular architectures, and scalable database schemas ensure that your software effortlessly accommodates future business growth.
+            </p>
+            <div class="exp-pills">
+              <span class="cap-pill">Clean Architecture</span>
+              <span class="cap-pill">Microservices</span>
+              <span class="cap-pill">Maintainability</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Node 4: CONTINUOUS INNOVATION -->
+        <div class="timeline-milestone-item reveal-up" style="transition-delay: 0.2s;">
+          <div class="timeline-milestone-node node-amber">
+            <span class="node-icon">04</span>
+          </div>
+          <div class="glass-card timeline-experience-card tilt-card">
+            <div class="exp-card-header">
+              <span class="mono-meta">04 // INNOVATION</span>
+              <span class="status-chip chip-amber">CONTINUOUS ADAPTATION</span>
+            </div>
+            <h3 class="exp-entity-title">Continuous Technology Evolution</h3>
+            <span class="exp-role-sub">Modern Tech Stack Mastery</span>
+            <p class="exp-desc">
+              We constantly adopt cutting-edge tools, cloud frameworks, and AI workflows to deliver competitive technical advantages, streamlined performance, and reduced infrastructure overhead.
+            </p>
+            <div class="exp-pills">
+              <span class="cap-pill">Cloud Native</span>
+              <span class="cap-pill">AI Automation</span>
+              <span class="cap-pill">Modern Toolchains</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. DELIVERY LIFECYCLE SECTION -->
+  <section class="section learning-section" id="learning">
+    <div class="container">
+      <div class="section-header-wrap reveal-up">
+        <span class="section-num">07 // DELIVERY LIFECYCLE</span>
+        <h2 class="section-title">How We Deliver & Scale<span class="logo-dot">.</span></h2>
+        <p class="section-sub">A proven 4-stage engineering lifecycle guaranteeing predictable timelines, rigorous quality validation, and high-performance deployments.</p>
+      </div>
+
+      <div class="evolution-timeline-container reveal-up">
+        <!-- Connecting Progress Laser Path -->
+        <div class="evolution-laser-line"></div>
+
+        <!-- Timeline Milestone 1: DISCOVERY -->
+        <div class="evolution-item reveal-up">
+          <div class="evolution-year-chip chip-cyan">STAGE 01</div>
+          <div class="glass-card evolution-content-card tilt-card">
+            <div class="evo-card-top">
+              <span class="mono-meta">01 // DISCOVERY & BLUEPRINTING</span>
+              <span class="status-chip chip-cyan">FOUNDATION</span>
+            </div>
+            <h3 class="evo-milestone-title">Requirements & Architecture Blueprint</h3>
+            <p class="evo-milestone-desc">We analyze domain workflows, determine architectural constraints, design database schemas (ERD), and establish technical specifications for maximum system performance.</p>
+
+            <div class="floating-cert-group">
+              <span class="floating-cert-label">// STAGE ARTIFACTS</span>
+              <div class="cert-chips-inline">
+                <span class="floating-cert-chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg> Architecture Specification</span>
+                <span class="floating-cert-chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg> Database Schema (ERD)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Milestone 2: SPRINT ENGINEERING -->
+        <div class="evolution-item reveal-up" style="transition-delay: 0.1s;">
+          <div class="evolution-year-chip chip-violet">STAGE 02</div>
+          <div class="glass-card evolution-content-card tilt-card">
+            <div class="evo-card-top">
+              <span class="mono-meta">02 // SPRINT ENGINEERING</span>
+              <span class="status-chip chip-violet">DEVELOPMENT</span>
+            </div>
+            <h3 class="evo-milestone-title">Modular Engineering & Clean Code</h3>
+            <p class="evo-milestone-desc">Rapid iterative sprints using clean code principles, modular components, and robust APIs. Clients receive transparent milestone updates throughout the development lifecycle.</p>
+
+            <div class="floating-cert-group">
+              <span class="floating-cert-label">// STAGE ARTIFACTS</span>
+              <div class="cert-chips-inline">
+                <span class="floating-cert-chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg> Sprint Deliverables</span>
+                <span class="floating-cert-chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg> API Documentation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Milestone 3: QA & AUTOMATION -->
+        <div class="evolution-item reveal-up" style="transition-delay: 0.15s;">
+          <div class="evolution-year-chip chip-magenta">STAGE 03</div>
+          <div class="glass-card evolution-content-card tilt-card">
+            <div class="evo-card-top">
+              <span class="mono-meta">03 // AUTOMATED QA</span>
+              <span class="status-chip chip-magenta">VALIDATION</span>
+            </div>
+            <h3 class="evo-milestone-title">Systematic Testing & Defect Isolation</h3>
+            <p class="evo-milestone-desc">Comprehensive manual and automated test execution across boundary values, security vulnerabilities, regression suites, and high-concurrency loads to guarantee production readiness.</p>
+
+            <div class="floating-cert-group">
+              <span class="floating-cert-label">// STAGE ARTIFACTS</span>
+              <div class="cert-chips-inline">
+                <span class="floating-cert-chip highlight-cert"><svg width="14" height="14" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg> Test Execution Reports</span>
+                <span class="floating-cert-chip highlight-cert"><svg width="14" height="14" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg> Zero Escaped Defects Signoff</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Milestone 4: DEPLOYMENT & SCALE -->
+        <div class="evolution-item reveal-up" style="transition-delay: 0.2s;">
+          <div class="evolution-year-chip chip-amber">STAGE 04</div>
+          <div class="glass-card evolution-content-card tilt-card">
+            <div class="evo-card-top">
+              <span class="mono-meta">04 // CLOUD DEPLOYMENT</span>
+              <span class="status-chip chip-amber">PRODUCTION</span>
+            </div>
+            <h3 class="evo-milestone-title">Production Release & Ongoing Optimization</h3>
+            <p class="evo-milestone-desc">Continuous deployment via automated CI/CD pipelines, live telemetry monitoring, cloud scalability management, and proactive maintenance to ensure maximum uptime.</p>
+
+            <div class="floating-cert-group">
+              <span class="floating-cert-label">// TARGET METRICS</span>
+              <div class="cert-chips-inline">
+                <span class="floating-cert-chip">99.99% Availability</span>
+                <span class="floating-cert-chip">CI/CD Automation</span>
+                <span class="floating-cert-chip">24/7 Monitoring</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="logo-prefix">//</span>
+        <span class="logo-text">ApexTech</span><span class="logo-dot">.</span>
+      </div>
+      <p class="footer-text">© 2026 ApexTech Solutions Ltd. All rights reserved. Enterprise Software Engineering & QA Studio.</p>
+      <div class="footer-links">
+        <a href="#hero" class="footer-link">Top</a>
+        <a href="#vision" class="footer-link">Vision</a>
+        <a href="#skills" class="footer-link">Capabilities</a>
+        <a href="#projects" class="footer-link">Featured Work</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
